@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+    .navbar1{
+    
+        height: 40px;
+        background-color: #0f1111;
+        padding-top: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    button{
+    background-color: #f08804;
+}
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}
+a{
+    margin-right: 50px;
+    text-decoration: none;
+    margin-top: -5PX;
+    color: #f08804;
+    
+}
+
+footer{
+    background-color: #0f1111;
+    text-align: center;
+    margin-top: 600px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+    
+}
+#content{
+    height: 300px;
+
+}
+a:hover{
+    border-top: 2px solid white;
+    background-color: #f08804;
+    transition: all;
+    transition: ease-in-out;
+    color: #0f1111;
+    transform: scale(1.2);
+}
+.logo{
+    margin-left: 200px;
+    
+    
+}
+img{
+    
+    justify-content:left;
+    justify-items: left;
+    margin-left: -75%;
+}
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #f0eeee;
+}
+</style>
+<body>
+    <header>
+        <div class="navbar1">
+            <div class="logo">
+        <a id="logo-content">
+            <img  src="/google=logo.png" height="25" alt="">
+        </a></div>
+        <div class="navbar-links">
+        <a href="./index.html">Home</a>
+        <a href="./jobs.html">Job Description</a>
+        <a href="./apply.html">Apply Here</a>
+    </div>   
+    </div>
+</header>
+<a class="back" href="./index.html">Back to Home</a>
+
+
+
+
+<h1>Apply for IT Jobs</h1>
+
+<form action="#" method="post">
+    <div class="form-group">
+        <label for="job">Select Job:</label>
+        <select id="job" name="job" required>
+            <option value="" disabled selected>Select a job</option>
+            <option value="web_developer">Web Developer</option>
+            <option value="network_administrator">Network Administrator</option>
+            <option value="system_analyst">System Analyst</option>
+            <option value="database_administrator">Database Administrator</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+    </div>
+    <div class="form-group">
+        <label for="institute">Institute Name:</label>
+        <input type="text" id="institute" name="institute" required>
+    </div>
+    <div class="form-group">
+        <label for="gpa">GPA:</label>
+        <input type="number" id="gpa" name="gpa" step="0.01" min="0" max="4" required>
+    </div>
+    <div class="form-group">
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+    <button type="submit">Submit Application</button>
+</form>
+
+<footer>
+    <p>&copy; 2024 IT Solutions. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
